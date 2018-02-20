@@ -1,4 +1,6 @@
-import {Users} from './Users';
+import {
+	Users
+} from './Users';
 import Followers from './Followers';
 
 export {

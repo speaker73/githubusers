@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "bundleImport": "react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res",
+    "assembleDebug": "cd android && gradlew.bat assembleDebug",
+    "adbInstall": "adb install android/app/build/outputs/apk/app-debug.apk",
+    "production": "npm run bundleImport && npm run assembleDebug && npm run adbInstall",
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest"
   },

@@ -13,7 +13,6 @@ export default class User extends PureComponent {
 			              followers_url,
 			              title:`Followers by ${this.props.children}`
             		});
-            		console.log(this.props);
           		}}
         >
           <Image style={{width:100, height:100}} width={100} heigth={100} source={{uri:this.props.user.avatar_url}} />

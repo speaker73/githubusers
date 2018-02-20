@@ -22,14 +22,3 @@ export default class App extends Component {
     return <RootStack />;
   }
 }
-
-const styles = StyleSheet.create({
-  title:{
-    fontSize:20,
-  },
-  container: {
-    marginTop:10,
-    backgroundColor: '#fff',
-  },
-});
-

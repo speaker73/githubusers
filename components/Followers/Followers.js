@@ -22,7 +22,6 @@ class Followers extends Component {
 			method:'get',
 			url:followers_url
 		});
-		console.log(data)
 		if(status === 200){
 			this.setState({data});
 		}	
